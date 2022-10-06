@@ -1,6 +1,9 @@
 # Programs
 This repository is a collection of basic programs in any coding language. 
 This will participate in hacktoberfest 2022.
+Try to solve the opened issues.
+You can provide your issues also.
+ONLY QUALITY PRs WILL BE ACCEPTED!!
 
 # Hacktoberfest 2022
 Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month long festival of open source code presented by Digital Ocean and DEV this year in 2022.
