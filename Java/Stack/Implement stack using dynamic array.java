@@ -1,5 +1,3 @@
-package dsa.Stacks;
-
 import dsa.Stacks.Exceptions.StackEmptyException;
 
 public class StackUsingArray {
@@ -61,3 +59,9 @@ public class StackUsingArray {
         return temp;
     }
 }
+
+// public class StackEmptyException extends Exception{
+//     @Serial
+//     private static final long serialVersionUID = 1L;
+// }
+
