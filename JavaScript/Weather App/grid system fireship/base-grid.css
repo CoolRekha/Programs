@@ -1,0 +1,18 @@
+.base-grid {
+    display: grid;
+    gap: 1rem;      /*ensuring 1rem space b/w grids
+
+        explicitly defining number of column
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;   
+                    assigning space to num of fr, more fr less and more divided space
+                        or
+    grid-template-columns: repeat(12, 1fr);
+
+        implicitly defining*/
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    /* autofit will consume whole space whereas if we wana leave space 
+    we can use autofill which will leave space when available */
+
+}

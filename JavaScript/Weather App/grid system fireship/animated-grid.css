@@ -1,0 +1,89 @@
+.animated-grid{
+    height: 85vh;
+    margin-bottom: 200px;
+
+    display: grid;
+    gap: 1rem;
+
+    /* Explicit grid */
+    grid-template-areas: 
+        'a  b  c  d'
+        'l  🌟 🌟 e'
+        'k  🌟 🌟 f'
+        'j  i  h  g';
+    grid-template-rows: repeat(4,25%);
+    grid-template-rows: 240px auto auto 240px; /*distribution logic explained in 1st one*/
+
+    --staggered-delay:100ms; /* variable */
+}
+
+@keyframes cardEntrance{
+    from{
+        opacity: 0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);  /*that changing color animation comes from here*/
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
+
+.card{
+    background-color: rgb(36,243, 147);
+    animation: cardEntrance 700ms ease-out;     /*adding animation to this class*/
+    animation-fill-mode: backwards;             /*to ensure cards are invisible before animation starts*/
+}
+.card:nth-child(1){
+    grid-area:a;
+    animation-delay: calc(1 * var(--staggered-delay));
+}
+.card:nth-child(2){
+    grid-area: b;
+    animation-delay: calc(2*var(--staggered-delay));
+}
+.card:nth-child(3){
+    grid-area:c;
+    animation-delay: calc(3 * var(--staggered-delay));
+}
+.card:nth-child(4){
+    grid-area: d;
+    animation-delay: calc(4 * var(--staggered-delay));
+}
+.card:nth-child(5){
+    grid-area: e;
+    animation-delay: calc( 5* var(--staggered-delay));
+}
+.card:nth-child(6){
+    grid-area:f;
+    animation-delay: calc(6 * var(--staggered-delay));
+}
+.card:nth-child(7){
+    grid-area:g;
+    animation-delay: calc(7 * var(--staggered-delay));
+}
+.card:nth-child(8){
+    grid-area:h;
+    animation-delay: calc(8 * var(--staggered-delay));
+}
+.card:nth-child(9){
+    grid-area:i;
+    animation-delay: calc(9 * var(--staggered-delay));
+}
+.card:nth-child(10){
+    grid-area:j;
+    animation-delay: calc( 10* var(--staggered-delay));
+}
+.card:nth-child(11){
+    grid-area:k;
+    animation-delay: calc( 11* var(--staggered-delay));
+}
+.card:nth-child(12){
+    grid-area:l;
+    animation-delay: calc(12 * var(--staggered-delay));
+}
+.card:last-child{
+    grid-area: 🌟;
+    animation-delay: calc(13 * var(--staggered-delay));
+}
