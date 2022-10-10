@@ -1,0 +1,17 @@
+.photo-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;  /*explicitly seting min ^|^ size for that most square grids*/
+}
+
+.card-tall{
+    grid-row: span 2/auto; /*span- function to make element consume more grid than 1
+    if element have this property it will use this class (apparently css have classes)
+    its like span (number of grids.) / (ending pos.) (for rows in this case */
+}
+
+.card-wide{
+    grid-column: span 2/auto;
+}
