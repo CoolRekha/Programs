@@ -1,0 +1,68 @@
+@media screen and (max-width: 770px) {
+  .banner-text h1 {
+    font-size: 64px;
+   
+    /* kaushins font */
+  }
+
+  .banner-text p {
+    font-size: 15px;
+  }
+
+  .banner-btn a {
+    display: block;      
+    margin: 20px auto;
+  }
+
+  .title-text h1 {
+    font-size: 30px;
+  }
+
+  /* features part  */
+  .features,
+  .features-img {
+    flex-basis: 100%;
+  }
+
+  .features-img img {
+    width: 100%;
+  }
+
+  /* Services part  */
+  .single-services{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .services-desc p{
+    font-size: 12px;
+  }
+  
+  hr{   
+    margin: 5px auto;    
+  }
+
+  .single-services:hover .services-desc{ 
+    bottom: 25%;    
+  }
+
+  /* testimonials part  */
+
+  .testimonials-col{
+    flex-basis: 100%;
+  }
+
+  /* footer part  */
+
+  .footer-left,
+ .footer-right{
+   font-size: 14px;
+   flex-basis: 100%;
+ }
+
+ .footer-img{
+ 
+  max-width: 300px;
+  top: 20%;    
+ }
+}
