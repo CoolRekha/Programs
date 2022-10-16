@@ -1,0 +1,37 @@
+#include<iostream>
+#include<conio.h>
+#define PI 3.14
+class circle
+{
+      float radius;
+public:
+      void setradius();
+      void showradius();
+      float getradius();
+};
+void circle :: setRadius()
+{
+    cout<< "Enter Radius : ";
+    cin >> radius;
+}
+void circle :: showradius()
+{
+   cout << "\n Radius : " << radius;
+}
+float circle :: getradius()
+{
+     float ar;
+     ar = PI * c.getradius() * c.getradius();
+     return ar;
+}
+void main()
+{
+     clrscr();
+     circle c1;
+     c1.setradius();
+     c1.showradius();
+     float a = calarea( c1 );
+     cout<< "\n area of circle : " << a;
+     getch();
+}
+ 
